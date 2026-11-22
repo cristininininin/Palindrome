@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Recognizer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Palindrome Recognizer</h1>
+            <p>Universal Multi-Alphabet Recognition System</p>
+            <span class="subtitle">Using Pushdown Automaton (PDA)</span>
+        </header>
+
+        <main>
+            <section class="input-section">
+
+                <h2>Enter Your String</h2>
+
+                <p>
+                    Enter letters, numbers, or a combination
+                    to check if your input is a palindrome.
+                </p>
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Example: MADAM"
+                    autocomplete="off"
+                >
+
+                <div class="buttons">
+                    <button id="checkButton">Check String</button>
+                    <button id="clearButton" class="clear-btn">Clear</button>
+                </div>
+
+            </section>
+
+            <section class="result-section">
+
+                <h2>Recognition Result</h2>
+
+                <div class="result-box">
+                    <p>Original String</p>
+                    <h3 id="originalString">---</h3>
+                </div>
+
+                <div class="result-box">
+                    <p>Reversed String</p>
+                    <h3 id="reversedString">---</h3>
+                </div>
+
+                <div id="resultMessage" class="result-message">
+                    Waiting for input...
+                </div>
+
+            </section>
+
+            <section class="stack-section">
+
+                <h2>PDA Stack Simulation</h2>
+
+                <p id="stackStatus">
+                    Stack operations will appear here.
+                </p>
+
+                <div id="stackDisplay" class="stack-display">
+                    <span>Empty Stack</span>
+                </div>
+
+                <div id="stackLog" class="stack-log">
+                </div>
+
+            </section>
+
+            <section class="examples-section">
+
+                <h2>Sample Inputs</h2>
+
+                <div class="examples">
+                    <button class="example-btn" data-value="MADAM">MADAM</button>
+                    <button class="example-btn" data-value="MAAM">MAAM</button>
+                    <button class="example-btn" data-value="SIR">SIR</button>
+                    <button class="example-btn" data-value="12321">12321</button>
+                    <button class="example-btn" data-value="A1B1A">A1B1A</button>
+                    <button class="example-btn" data-value="HELLO">HELLO</button>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Palindrome Recognizer | Computer Science Project</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
